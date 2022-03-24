@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Admin Page</title>
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h3>Create New Admin in Table</h3>
+       <form action="Create.php" method="post">
+           <input type="text" name="username" placeholder="Name">
+           <input type="text" name="password" placeholder="Password">
+           <input type="text" name="email" placeholder="Email">
+           <input type="submit" value="Add">
+       </form>
+       
+       <h3>Update User From Table by ID</h3>
+       <form action="Update.php" method="post">
+           <input type="text" name="id" placeholder="ID">
+           <input type="text" name="newpassword" placeholder="New Password">
+           <input type="submit" value="Update">
+       </form>
+
+       <h3>Delet User From Table by ID</h3>
+       <form action="Delet.php" method="post">
+           <input type="text" name="id" placeholder="ID">
+           <input type="submit" value="Delete">
+       </form>
+       
+
+       <h3>Read in Array</h3>
+       <form action="Read.php" method="post">
+           <input type="submit" value="Read">
+       </form>
+
+       
+       <h3>Read in Table</h3>
+       <form action="Readtable.php" method="post">
+           <input type="submit" value="Read">
+       </form>
+
+       <br>
+       <form action="../logout.php" method="post">
+           <input type="submit" value="Logout">
+       </form>
+        
+    </body>
+</html>
